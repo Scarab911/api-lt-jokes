@@ -59,7 +59,7 @@ app.get('/jokes', (req, res) => {
     res.json(jokes);
 });
 
-app.get('/jokes/random', (req, res) => {
+app.get('/random', (req, res) => {
     const randomNumber = Math.round(Math.random() * (jokes.length - 1));
     res.json(jokes[randomNumber]);
 });
