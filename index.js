@@ -13,7 +13,7 @@ const allJokesSites = jokeSites.sites;
 
 //home page and message
 app.get('/', (req, res) => {
-    res.json('Welcome to my Lithuanian Jokes API')
+    res.json('Welcome to my Lithuanian Jokes API,\nUse a this link to get to jokes: https://lithuanian-jokes.herokuapp.com/jokes\nuse this link to get random joke: https://lithuanian-jokes.herokuapp.com/random')
 });
 
 //printing array with all links(just to check)
