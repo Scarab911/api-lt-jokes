@@ -64,8 +64,6 @@ app.get('/jokes/random', (req, res) => {
     res.json(jokes[randomNumber]);
 });
 
-
-
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`)
 );
 
