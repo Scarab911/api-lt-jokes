@@ -4,8 +4,10 @@ const axios = require('axios');
 const express = require('express');
 const jokeSites = require('./jokeSites');
 const { children } = require('cheerio/lib/api/traversing');
-
+const cors = require('cors');
 const app = express();
+
+app.use(cors());
 
 const jokes = [];
 const allJokesSites = jokeSites.sites;
