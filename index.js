@@ -57,12 +57,12 @@ app.get('/jokes', (req, res) => {
         res.json(foundJokes);
         return
     };
-    res.json(jokes);
+    return res.json(jokes);
 });
 
 app.get('/random', (req, res) => {
     const randomNumber = Math.round(Math.random() * (jokes.length - 1));
-    res.json(jokes[randomNumber]);
+    return res.json(jokes[randomNumber]);
 });
 
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`)
